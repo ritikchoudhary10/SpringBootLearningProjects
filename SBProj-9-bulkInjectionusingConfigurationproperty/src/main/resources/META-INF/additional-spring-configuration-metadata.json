@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "ritik.val1",
+    "type": "java.lang.String",
+    "description": "A description for 'ritik.val1'"
+  },
+  {
+    "name": "ritik.val2",
+    "type": "java.lang.String",
+    "description": "A description for 'ritik.val2'"
+  }
+]}
