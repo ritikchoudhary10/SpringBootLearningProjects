@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: ritik
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+    url: jdbc:oracle:thin:@Personal:1521:orcl
+    username: c##ritik

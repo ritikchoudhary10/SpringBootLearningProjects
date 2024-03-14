@@ -1,0 +1,56 @@
+spring:
+  profiles:
+    active: test
+  
+  
+---
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: ritik
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+    url: jdbc:oracle:thin:@Personal:1521:orcl
+    username: c##ritik
+  config: 
+    activate:
+      on-profile: dev
+      
+---
+spring:  
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Ritik
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+    url: jdbc:mysql:///mysql_conn
+    username: root
+  config: 
+    activate: 
+         on-profile: test
+         
+
+---
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: ritik
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:oracle:thin:@Personal:1521:orcl
+    username: c##ritik
+  config:
+    activate: 
+        on-profile: uat
+      
+---
+spring:         
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: ritik
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:oracle:thin:@Personal:1521:orcl
+    username: c##ritik
+  config: 
+    activate:
+      on-profile: prod
+      
+      
+      
