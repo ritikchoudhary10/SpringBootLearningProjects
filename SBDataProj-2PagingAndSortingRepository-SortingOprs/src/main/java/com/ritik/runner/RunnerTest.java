@@ -17,16 +17,37 @@ public class RunnerTest implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		// getting all records sort by Asc order  
-		try {
+		/*try {
 			Iterable<Student> sortedRecords = ser.getSortedRecords(true, "stdAdrr");
 			System.out.println("=============================================================================");
 			sortedRecords.forEach(System.out::println);
 			System.out.println("=============================================================================");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+
+		// getting all records sort by Desc order  
+		/*try {
+			Iterable<Student> sortedRecords = ser.getSortedRecords(false, "stdAdrr");
+			System.out.println("=============================================================================");
+			sortedRecords.forEach(System.out::println);
+			System.out.println("=============================================================================");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		
+		// if two address are same then sort on the basis of name
+		try {
+			Iterable<Student> sortedRecords = ser.getSortedRecords(true, "stdAdrr" , "stdname");
+			System.out.println("=============================================================================");
+			sortedRecords.forEach(System.out::println);
+			System.out.println("=============================================================================");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		
 
 		try {
 		} catch (Exception e) {
