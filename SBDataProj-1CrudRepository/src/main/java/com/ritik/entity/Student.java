@@ -23,5 +23,9 @@ public class Student {
 	private Long stdContact;
 	private String stdAdrr;
 	
+	public Student(Long stdId) {
+		this.stdId = stdId;
+	}
+	
 	
 }
