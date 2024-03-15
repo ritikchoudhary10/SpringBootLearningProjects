@@ -37,14 +37,22 @@ public class RunnerTest implements CommandLineRunner {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}*/
-		
+
 		// if two address are same then sort on the basis of name
-		try {
+		/*try {
 			Iterable<Student> sortedRecords = ser.getSortedRecords(true, "stdAdrr" , "stdname");
 			System.out.println("=============================================================================");
 			sortedRecords.forEach(System.out::println);
 			System.out.println("=============================================================================");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		
+		System.out.println("==============Paging operations========================================================================");
 
+		try {
+			ser.getPage(1, 5).forEach(System.out::println);;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
