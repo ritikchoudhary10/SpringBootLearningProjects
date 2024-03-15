@@ -5,10 +5,12 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import com.ritik.entity.Student;
 import com.ritik.service.IStudentService;
 
+@Component
 public class RunnerTest implements CommandLineRunner {
 	
 	@Autowired
@@ -37,11 +39,11 @@ public class RunnerTest implements CommandLineRunner {
 
 		try {
 			List<Student> students = List.of(
-					new Student(null,"Anurag",8978978970L,"Jhasi"),
-					new Student(null,"Kishore",8978978970L,"Delhi"),
-					new Student(null,"Sonu",8978978970L,"Kanpur"),
-					new Student(null,"Monu",8978978970L,"banaras"),
-					new Student(null,"Mitesh",8978978970L,"Kashi")
+					new Student(null,"Ankit",8978978970L,"Jhasi"),
+					new Student(null,"Amul",8978978970L,"jodhpur"),
+					new Student(null,"Harsh",8978978970L,"Panji"),
+					new Student(null,"Chirag",8978978970L,"Banglore"),
+					new Student(null,"Mitali",8978978970L,"Trichi")
 					);
 			System.out.println(ser.addStudents(students));
 		} catch (Exception e) {
