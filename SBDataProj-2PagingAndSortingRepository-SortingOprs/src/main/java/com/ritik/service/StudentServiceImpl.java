@@ -25,8 +25,16 @@ public class StudentServiceImpl implements IStudentService{
 
 	@Override
 	public Iterable<Student> getPage( Integer pageNo, Integer pageSize) {
-Pageable p= PageRequest.of(pageNo-1,pageSize);
+		Pageable p= PageRequest.of(pageNo-1,pageSize);
 		Page<Student> all = repo.findAll(p);
-		return all.getContent();
+	return all.getContent();
+	}
+	
+	@Override
+	public Iterable<Student> getSortedPageData(Integer pageNo, Boolean flag, String properties) {
+		int pageSize = 6;
+		Sort sorting = Sort.by(flag?Direction.ASC:Direction.DESC  , properties);
+		Pageable page=PageRequest.of(pageNo-1,pageSize,sorting);
+		return repo.findAll(page).getContent();
 	}
 }

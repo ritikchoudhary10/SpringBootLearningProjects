@@ -51,13 +51,21 @@ public class RunnerTest implements CommandLineRunner {
 		
 		System.out.println("==============Paging operations========================================================================");
 
-		try {
-			ser.getPage(1, 5).forEach(System.out::println);;
+		/*try {
+			ser.getPage(1, 5).forEach(System.out::println);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 
+		/*try {
+			ser.getSortedRecords(true,"stdname","stdAdrr").forEach(System.out::println);;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		
 		try {
+			ser.getSortedPageData(3, true, "stdId").forEach(System.out::println);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
