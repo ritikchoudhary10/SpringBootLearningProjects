@@ -12,10 +12,10 @@ import com.ritik.service.IStudentService;
 
 @Component
 public class RunnerTest implements CommandLineRunner {
-	
+
 	@Autowired
 	IStudentService ser;
-	
+
 	@Override
 	public void run(String... args) throws Exception {
 
@@ -37,37 +37,28 @@ public class RunnerTest implements CommandLineRunner {
 
 		// SaveAll operation
 
-		try {
-			List<Student> students = List.of(
-					new Student(null,"Ankit",8978978970L,"Jhasi"),
-					new Student(null,"Amul",8978978970L,"jodhpur"),
-					new Student(null,"Harsh",8978978970L,"Panji"),
-					new Student(null,"Chirag",8978978970L,"Banglore"),
-					new Student(null,"Mitali",8978978970L,"Trichi")
-					);
-			System.out.println(ser.addStudents(students));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		/*	try {
+				List<Student> students = List.of(
+						new Student(null,"Ankit",8978978970L,"Jhasi"),
+						new Student(null,"Amul",8978978970L,"jodhpur"),
+						new Student(null,"Harsh",8978978970L,"Panji"),
+						new Student(null,"Chirag",8978978970L,"Banglore"),
+						new Student(null,"Mitali",8978978970L,"Trichi")
+						);
+				System.out.println(ser.addStudents(students));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}*/
 
 		// get All records
-		/*
-		 * try { ser.getAllStudentsDetails().forEach(System.out::println);
-		 * }catch(Exception e) {e.printStackTrace();}
-		 */
+
+		/*	try {
+				ser.getAllStudentsDetails().forEach(System.out::println);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}*/
 
 		// Find total Students
-		/*
-		 * try { System.out.println("Total no. of Students are "+ser.studentCount());
-		 * }catch(Exception e) {e.printStackTrace();}
-		 */
-		/*try {
-			ser.getAllStudentsDetails().forEach(System.out::println);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}*/
-
-		// Find total no. of Students
 
 		/*try {
 			System.out.println("Total no. of Students are " + ser.studentCount());
@@ -77,21 +68,19 @@ public class RunnerTest implements CommandLineRunner {
 
 		// checking the record exists or not
 
-		/*try {
-			System.out.println(ser.isStudentAvailable(101L));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		}*/
+		/*	try {
+				System.out.println(ser.isStudentAvailable(101L));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}*/
 
 		// getting the student record if available no exception record will be displayed
 
-		/*		try {
-					System.out.println(ser.getStudentDetails(1011L));
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-		*/
+		/*try {
+			System.out.println(ser.getStudentDetails(101L));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
 
 		// when record does not exists it will throw exception
 		/*		try {
@@ -101,18 +90,17 @@ public class RunnerTest implements CommandLineRunner {
 				}*/
 
 		// getting record or dummy data 
-		/*		try {
-					System.out.println(ser.getStudentDetailsOrDummyData(101L));
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-				
-				try {
-					System.out.println(ser.getStudentDetailsOrDummyData(1011L));
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-		*/
+		/*try {
+			System.out.println(ser.getStudentDetailsOrDummyData(101L));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		/*	
+			try {
+				System.out.println(ser.getStudentDetailsOrDummyData(1011L));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}*/
 
 		// updating the records that exists 
 
