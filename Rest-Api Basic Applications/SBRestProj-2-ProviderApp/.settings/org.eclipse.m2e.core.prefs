@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 activeProfiles=pom.xml
+=======
+activeProfiles=
+>>>>>>> 02fe341ef764c4604311baa895b1cd3c9899f7e0
 eclipse.preferences.version=1
 resolveWorkspaceProjects=true
 version=1

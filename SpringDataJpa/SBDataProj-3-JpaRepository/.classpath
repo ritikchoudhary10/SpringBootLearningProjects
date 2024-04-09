@@ -14,13 +14,20 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+=======
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+>>>>>>> 02fe341ef764c4604311baa895b1cd3c9899f7e0
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="test" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="optional" value="true"/>
@@ -33,6 +40,19 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+=======
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+>>>>>>> 02fe341ef764c4604311baa895b1cd3c9899f7e0
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -44,6 +64,7 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
 		<attributes>
+<<<<<<< HEAD
 			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 		</attributes>
@@ -91,6 +112,10 @@
 			<attribute name="maven.artifactId" value="spring-data-jpa"/>
 			<attribute name="maven.version" value="3.2.3"/>
 			<attribute name="maven.scope" value="compile"/>
+=======
+			<attribute name="optional" value="true"/>
+			<attribute name="test" value="true"/>
+>>>>>>> 02fe341ef764c4604311baa895b1cd3c9899f7e0
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
