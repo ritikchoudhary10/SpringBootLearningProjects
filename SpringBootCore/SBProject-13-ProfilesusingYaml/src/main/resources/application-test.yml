@@ -1,7 +1,0 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: Ritik
-    type: com.mchange.v2.c3p0.ComboPooledDataSource
-    url: jdbc:mysql:///mysql_conn
-    username: root
