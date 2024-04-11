@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 21
+Implementation-Title: SBProj-4.2-Assignment2-LayeredApplicationDevelopme
+ nt-1
+Implementation-Version: 0.0.1-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+

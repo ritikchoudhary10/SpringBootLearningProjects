@@ -1,0 +1,24 @@
+com: 
+  customer:
+    custId: 101
+    custName: Ritik
+    custMailId: ritik@xyz.com
+    custMobNo: 9999999999
+    
+  admin:
+    adminId: 1001
+    adminName: Raja
+    adminContact: 9999999999
+
+---
+in: 
+    satiengg: 
+       studId: 29015
+       studName: Ram
+       studAdrr: chimanBagh,Indore
+       studentMob: 
+              - 8888888888
+              - 7878787878
+    
+    
+    
