@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>Spring</groupId>
-	<artifactId>SB-AmbitySolution-1</artifactId>
+	<artifactId>SBProj-2AmbitySolution-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SB-AmbitySolution-1</name>
+	<name>SBProj-2AmbitySolution-1</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ritik</groupId>
-	<artifactId>SBProj-11-YamlFileUsage</artifactId>
+	<artifactId>SBProject-11-YamlFileUsage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SBProj-11-YamlFileUsage</name>
+	<name>SBProject-11-YamlFileUsage</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

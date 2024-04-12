@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ritik</groupId>
-	<artifactId>SBProj-12-ProfilesusingPropertiesFile</artifactId>
+	<artifactId>SBProject-13-ProfilesusingYaml</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SBProj-12-ProfilesusingProperties</name>
+	<name>SBProject-13-ProfilesusingYaml</name>
 	<description>Profiles Demo</description>
 	<properties>
 		<java.version>17</java.version>

@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 Build-Jdk-Spec: 21
-Implementation-Title: SBProj-4LayeredApplicationDevelopment
+Implementation-Title: SBProj-4.0LayeredApplicationDevelopmentMini-Projec
+ t
 Implementation-Version: 0.0.1-SNAPSHOT
 Created-By: Maven Integration for Eclipse
 

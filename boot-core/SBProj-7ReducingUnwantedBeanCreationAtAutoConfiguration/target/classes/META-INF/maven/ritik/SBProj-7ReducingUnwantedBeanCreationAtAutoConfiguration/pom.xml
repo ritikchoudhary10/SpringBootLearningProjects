@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ritik</groupId>
-	<artifactId>SbProj-4LayeredApplicationDevelopment</artifactId>
+	<artifactId>SBProj-7ReducingUnwantedBeanCreationAtAutoConfiguration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SBProj-4LayeredApplicationDevelopment</name>
+	<name>SBProj-7ReducingUnwantedBeanCreationAtAutoConfiguration</name>
 	<description>Layered-Application-Development</description>
 	<properties>
 		<java.version>17</java.version>
