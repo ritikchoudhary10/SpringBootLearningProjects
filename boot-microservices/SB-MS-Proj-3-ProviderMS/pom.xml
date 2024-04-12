@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ritik</groupId>
-	<artifactId>SB-MS-Proj-4-ProviderMS</artifactId>
+	<artifactId>SB-MS-Proj-3-ProviderMS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SB-MS-Proj-4-ProviderMS</name>
-	<description>eureka intrs communication using LoadBalancer client</description>
+	<name>SB-MS-Proj-3-ProviderMS</name>
+	<description>eureka intrs communication</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>

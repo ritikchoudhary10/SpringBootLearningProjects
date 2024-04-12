@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ritik</groupId>
-	<artifactId>SB-MS-Proj-4-ProviderMS</artifactId>
+	<artifactId>SB-MS-Proj-4-EurekaServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SB-MS-Proj-4-ProviderMS</name>
+	<name>SB-MS-Proj-4-EurekaServer</name>
 	<description>eureka intrs communication using LoadBalancer client</description>
 	<properties>
 		<java.version>17</java.version>
@@ -19,12 +19,8 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
 		<dependency>
