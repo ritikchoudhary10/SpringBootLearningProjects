@@ -1,0 +1,1 @@
+<h1 style="color:red;text-align:center">Welcome to SpringBoot Web Application Home</h1>
