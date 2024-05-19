@@ -4,7 +4,7 @@
 <h1 style="text-align:center; color:red; font:30px"><b>All Employee Records</b></h1>
 <center>
 <c:choose>
-	<c:when test="${!empty empList}">
+	<c:when test="${ empPage.hasContent()}">
 		<table border="1" bgcolor="yellow">
 			<tr>
 				<th>Employee Id</th>		
@@ -14,7 +14,7 @@
 				<th>Employee departNo</th>
 				<th>Operations</th>		
 			</tr>
-			<c:forEach var="emp" items="${empList}"  >
+			<c:forEach var="emp" items="${empPage.getContent()}"  >
 			<tr>
 				<td>${emp.empno}</td>
 				<td>${emp.ename}</td>
@@ -29,6 +29,16 @@
 			</tr>
 			</c:forEach>
 		</table>
+		<br>
+		<c:if test="${empPage.hasPrevious()}">
+			<a href="report?page=${empPage.getNumber()-1 }">Prev&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</c:if>
+		<c:forEach var="pageNo" begin="1" end="${empPage.getTotalPages() }" step="1">
+			<a href="report?page=${pageNo-1}">${pageNo}&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		</c:forEach>
+		<c:if test="${empPage.hasNext()}">
+			<a href="report?page=${empPage.getNumber()+1 }">Next</a>
+		</c:if>
 		
 	</c:when>
 	<c:otherwise>No Employee Data Found</c:otherwise>
