@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:with="lang=${#locale.language}" th:lang="${lang}">
+<h1 style="text-align:center; color:red; font:30px"><b><span th:text="#{edit.form.title}"/></b></h1>
+<br><br>
+<center>
+	<form th:object="${emp}" th:action="@{/employee/update}" method="post">
+		<table bgcolor="cyan">
+			<tr>
+				<td><span th:text="#{common.empno}"/></td>
+				<td><input th:field="*{empno}" readonly="true" /></td>
+			</tr>
+			<tr>
+				<td><span th:text="#{common.ename}"/></td>
+				<td><input type="text" th:field="*{ename}" /></td>
+			</tr>
+			<tr>
+				<td><span th:text="#{common.job}"/></td>
+				<td><input type="text" th:field="*{job}"/></td>
+			</tr>
+			<tr>
+				<td><span th:text="#{common.sal}"/></td>
+				<td><input type="number" th:field="*{sal}"/></td>
+			</tr>
+			<tr>
+				<td><span th:text="#{common.deptno}"/></td>
+				<td><input type="number" th:field="*{deptno}"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" th:value="#{edit.form.submit}"/></td>
+				<td><input type="reset" th:value="#{edit.form.reset}"/></td>
+			</tr>
+		</table>
+	</frm:form>
+</center>
+</html>

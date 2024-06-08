@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:with="lang=${#locale.language}" th:lang="${lang}">
+<h1 style="text-align:center; color:red; font:30px"><b> <span th:text="#{report.main.title}" /> </b></h1>
+<center>
+<div th:if="${ empPage.hasContent()}">
+		<table border="1" bgcolor="yellow">
+			<tr>
+				<th><span th:text="#{common.empno}"/></th>		
+				<th><span th:text="#{common.ename}"/></th>		
+				<th><span th:text="#{common.job}"/></th>		
+				<th><span th:text="#{common.sal}"/></th>		
+				<th><span th:text="#{common.deptno}"/></th>
+				<th><span th:text="#{common.ops}"/></th>		
+			</tr>
+			<tr th:each="emp:${empPage}">
+				<td><span th:text="${emp.empno}"/></td>
+				<td><span th:text="${emp.ename}"/></td>
+				<td><span th:text="${emp.job}"/></td>
+				<td><span th:text="${emp.sal}"/></td>
+				<td><span th:text="${emp.deptno}"/></td>
+				<td><a th:href="@{/employee/update(empno=${emp.empno})}" title="Edit Employee Data"><img alt="edit image" th:src="@{/images/edit.png}" width="20px" height="20px"></a>
+					&nbsp;&nbsp;&nbsp;
+					<a th:href="@{/delete(empno=${emp.empno})}" title="Delete Employee Data" onclick="return confirm('Are you sure to Delete Employee Info')"><img alt="delete image" th:src="@{/images/delete.png}" width="20px" height="20px"></a>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<span th:if="${empPage.hasPrevious()}">
+			<a th:href="@{/employee/report(page=${empPage.getNumber()-1 })}"><span th:text="#{report.table.prev}"/>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</span>
+		<span th:each="i:${#numbers.sequence(1 ,empPage.getTotalPages())}" >
+			<a th:href="@{/employee/report(page=${i-1})}"><span th:text="${i}"/>&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		</span>
+		<span th:if="${empPage.hasNext()}">
+			<a th:href="@{/employee/report(page=${empPage.getNumber()+1 })}"><span th:text="#{report.table.next}"/></a>
+		</span>
+		
+	<div th:if="${!empPage.hasContent()}">No Employee Data Found</div>
+</div>
+<h2 style="background: green;color:red;"><span th:text="${resultMsg}"/></h2>
+<a th:href="@{/employee/add}" title="Add Employee Data"><img th:src="@{/images/add.png}" alt="add data" width="70px" height="70px"></a>
+</center>

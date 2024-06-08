@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    th:with="lang=${#locale.language}" th:lang="${lang}">
+
+<h1 style="text-align:center;color:red"><span th:text="#{home.main.title}"/></h1>
+<br>
+<br>
+<center><div style="display:flex;align-item:center;justify-content:center;"><p style="font-size:30px"><b><span th:text="#{home.report}"/></b></p><a th:href="@{/employee/report}" ><img th:src="@{/images/report.png}" alt="" width="50px" height="70px"></a></div></center>
+<br><br>
+<h2><b>:=> SELECT THE DESIRED LANGUAGE BY DEFAULT ENGLISH</b></h2>
+<ul>
+  <li>:=> <a th:href="@{/?lang=en_US}">English</a></li>
+  <li>:=> <a th:href="@{/?lang=bh_IN}">भोजपुरी</a></li>
+  <li>:=> <a th:href="@{/?lang=hi_IN}">हिंदी</a></li>
+  <li>:=> <a th:href="@{/?lang=gu_IN}">ગુજરાતી</a></li>
+  <li>:=> <a th:href="@{/?lang=kn_IN}">ಕನ್ನಡ(kannada)</a></li>
+  <li>:=> <a th:href="@{/?lang=ks_IN}">کشمیٖری (Kashmiri)</a></li>
+  <li>:=> <a th:href="@{/?lang=mr_IN}">मराठी</a></li>
+  <li>:=> <a th:href="@{/?lang=ta_IN}">தமிழ்(tamil)</a></li>
+  <li>:=> <a th:href="@{/?lang=te_IN}">తెలుగు (telegu)</a></li>
+</ul>
+</html>
+
+
